@@ -18,7 +18,7 @@ const SubscribeCard: React.FC<SubscribeCardProps> = ({ onFormSubmit }) => {
         headers: { 'Accept': 'application/json' }
       });
       if (response.ok) {
-        onFormSubmit(); // Avisa o componente pai que o form foi enviado com sucesso
+        onFormSubmit();
         form.reset();
       } else {
         alert("Oops! Houve um problema ao enviar sua inscrição.");
@@ -34,7 +34,7 @@ const SubscribeCard: React.FC<SubscribeCardProps> = ({ onFormSubmit }) => {
         <svg className="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.4 16.8L5 15.4l4-4-4-4L6.4 6l5.4 5.4-5.4 5.4zm7.6 1.2h-5v-2h5v2z" />
         </svg>
-        <span>Junte-se a mais de 3.000 desenvolvedores</span>
+        <span>Junte-se a mais de 30.000 desenvolvedores</span>
       </div>
       <form action="https://formspree.io/f/mdklorbz" method="POST" className="subscribe-form" onSubmit={handleSubmit}>
         <input type="email" name="email" placeholder="seuemail@exemplo.com.br" required />

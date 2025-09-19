@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-
-  // Lógica do Tema
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
@@ -26,14 +25,14 @@ const Header: React.FC = () => {
   return (
     <header className="header" role="banner" aria-label="Cabeçalho do site">
       <div className="logo-wrapper">
-        <a href="/" aria-label="Página inicial" className="logo-link">
+        <Link to="/" aria-label="Página inicial" className="logo-link">
           <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="logo-svg">
-            <path d="M30 75L5 50L30 25" stroke="#4169e1" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M70 25L95 50L70 75" stroke="#4169e1" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M60 15L40 85" stroke="#4169e1" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M30 75L5 50L30 25" stroke="#FF8C00" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M70 25L95 50L70 75" stroke="#FF8C00" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M60 15L40 85" stroke="#FF8C00" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
           <span className="logo-text">DEVagas</span>
-        </a>
+        </Link>
       </div>
 
       <div className="header-actions">
@@ -53,8 +52,9 @@ const Header: React.FC = () => {
       </div>
 
       <nav className={`nav ${isMenuOpen ? 'is-open' : ''}`} role="navigation" aria-label="Navegação principal">
-        <a href="https://apoia.se/casadoviralata" target="_blank" rel="noopener noreferrer">Apoia.se</a>
-        <a href="mailto:contato@devagas.com.br">Contato</a>
+        <Link to="/sobre" onClick={toggleMenu}>Sobre nós</Link>
+        <Link to="/contato" onClick={toggleMenu}>Contato</Link>
+        <Link to="/parceiro" onClick={toggleMenu}>Seja um parceiro</Link>
       </nav>
     </header>
   );

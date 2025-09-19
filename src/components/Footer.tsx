@@ -13,8 +13,8 @@ const Footer: React.FC = () => {
         </a>
         <nav className="footer-socials">
           <a href="#" aria-label="Discord" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-discord"></i></a>
-          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/caiolucasbittencourt/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/caiolucasbittencourt" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
         </nav>
       </div>
     </footer>

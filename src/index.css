@@ -10,8 +10,8 @@
   --card-bg: #141414;
   --border-color: #282828;
   --border-strong: #333;
-  --accent-color: #4169e1;
-  --accent-color-darker: #3a5dbd;
+  --accent-color: #FF8C00;
+  --accent-color-darker: #CC7000;
   --button-text-color: #FFFFFF;
   --nav-bg: #111;
   --hamburger-line: #EAEAEA;
@@ -26,8 +26,8 @@
   --card-bg: #FFFFFF;
   --border-color: #E0E0E0;
   --border-strong: #CCCCCC;
-  --accent-color: #4169e1;
-  --accent-color-darker: #3a5dbd;
+  --accent-color: #FF8C00;
+  --accent-color-darker: #CC7000;
   --button-text-color: #FFFFFF;
   --nav-bg: #FDFDFD;
   --hamburger-line: #1F1F1F;
@@ -41,23 +41,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.3s, color 0.3s;
-  
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .header {
-  /* --- ADICIONADO PARA CORRIGIR O ALINHAMENTO --- */
-  width: 100%; 
-  
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  width: 100%; max-width: 1200px; margin: 0 auto; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
 }
 
 .logo-wrapper { display: flex; align-items: center; gap: 1rem; }
@@ -244,6 +234,7 @@ body {
   margin-bottom: 2rem;
   line-height: 1.2;
   color: var(--text-primary);
+  text-align: left;
 }
 .page-content h2 {
   color: var(--text-primary);
@@ -256,6 +247,7 @@ body {
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 .page-content strong { color: var(--text-primary); font-weight: 600; }
 .page-content a { color: var(--text-muted); text-decoration: underline; }
