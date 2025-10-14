@@ -12,13 +12,13 @@
   --text-primary: #eaeaea;
   --text-secondary: #a0a0a0;
   --text-muted: #777;
-  --text-logo: #ffffff;
+  --text-logo: #eaeaea;
   --card-bg: #141414;
   --border-color: #282828;
   --border-strong: #333;
   --accent-color: #1e90ff;
   --accent-color-darker: #187bcd;
-  --button-text-color: #ffffff;
+  --button-text-color: #eaeaea;
   --nav-bg: #111;
   --hamburger-line: #eaeaea;
 }
@@ -28,13 +28,13 @@
   --text-primary: #1f1f1f;
   --text-secondary: #555555;
   --text-muted: #888888;
-  --text-logo: #000000;
+  --text-logo: #1f1f1f;
   --card-bg: #ffffff;
   --border-color: #e0e0e0;
   --border-strong: #cccccc;
   --accent-color: #1e90ff;
   --accent-color-darker: #187bcd;
-  --button-text-color: #ffffff;
+  --button-text-color: #eaeaea;
   --nav-bg: #fdfdfd;
   --hamburger-line: #1f1f1f;
 }
@@ -221,7 +221,6 @@ body {
 .main {
   max-width: 1200px;
   margin: 4rem auto;
-  padding: 2rem;
   flex-grow: 1;
 }
 
@@ -236,7 +235,6 @@ body {
 }
 .hero-text h1 {
   font-size: 3rem;
-  margin-bottom: 2rem;
   line-height: 1.2;
   color: var(--text-primary);
 }
@@ -244,7 +242,6 @@ body {
   font-size: 1.125rem;
   color: var(--text-secondary);
   line-height: 1.7;
-  margin-bottom: 1.5rem;
 }
 .hero-text p:last-of-type {
   margin-bottom: 0;
@@ -374,7 +371,7 @@ body {
 }
 
 .page-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -398,9 +395,16 @@ body {
   margin-bottom: 1.5rem;
   text-align: left;
 }
+.page-content ul {
+  padding: 1rem;
+}
+.page-content ul li {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
 .page-content strong {
-  color: var(--text-primary);
-  font-weight: 600;
+  color: var(--text-secondary);
 }
 .page-content a {
   color: var(--text-muted);

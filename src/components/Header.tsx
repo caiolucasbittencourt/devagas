@@ -53,8 +53,8 @@ const Header: React.FC = () => {
 
       <nav className={`nav ${isMenuOpen ? 'is-open' : ''}`} role="navigation" aria-label="Navegação principal">
         <Link to="/sobre" onClick={toggleMenu}>Sobre nós</Link>
-        <Link to="/contato" onClick={toggleMenu}>Contato</Link>
-        <Link to="/parceiro" onClick={toggleMenu}>Seja um parceiro</Link>
+        <Link to="/contato" onClick={toggleMenu}>Fale conosco</Link>
+        <Link to="/parceiro" onClick={toggleMenu}>Seja parceiro</Link>
       </nav>
     </header>
   );
