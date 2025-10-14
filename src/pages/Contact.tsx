@@ -3,7 +3,7 @@ import React from "react";
 const Contact: React.FC = () => {
   return (
     <section className="page-content">
-      <h1>Fale Conosco</h1>
+      <h1>Fale conosco</h1>
       <p>
         Este é o seu canal direto com a equipe DEVagas. Acreditamos que a
         comunicação é a chave para construir uma comunidade forte e uma

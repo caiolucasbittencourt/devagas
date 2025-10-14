@@ -3,7 +3,7 @@ import React from "react";
 const Partner: React.FC = () => {
   return (
     <section className="page-content">
-      <h1>Seja um parceiro</h1>
+      <h1>Seja parceiro</h1>
       <p>
         Se sua empresa está em busca de{" "}
         <strong>talentos de alta qualidade na área de tecnologia</strong>, a
