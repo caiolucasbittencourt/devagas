@@ -18,3 +18,11 @@ Newsletter diária de vagas de tecnologia, focada na comunidade de desenvolvedor
 - TypeScript
 - Vite
 - HTML5 & CSS3
+
+## Instalação
+
+```bash
+git clone https://github.com/caiolucasbittencourt/devagas
+cd devagas
+npm install
+npm run dev
